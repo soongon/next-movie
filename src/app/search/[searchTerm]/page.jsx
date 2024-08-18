@@ -5,7 +5,6 @@ export default async function SearchResult({params}) {
 
     const {searchTerm} = params;
 
-
     const url = `https://api.themoviedb.org/3/search/movie?query=${searchTerm}&include_adult=false&language=ko-KR&page=1&region=kr`;
     const options = {
         method: 'GET',
